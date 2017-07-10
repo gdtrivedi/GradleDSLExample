@@ -4,7 +4,7 @@ String projectName = "GradleDSLExample"
 String repo = 'gdtrivedi/GradleDSLExample'
 
 folder(projectName) {
-    description 'This example shows how to create a set of jobs for each github branch, each in its own folder..'
+  description 'This example shows how to create a set of jobs for each github branch, each in its own folder...'
 }
 
 URL branchUrl = "https://api.github.com/repos/$repo/branches".toURL()
@@ -21,9 +21,6 @@ branches.each { branch ->
         }
         triggers {
             scm 'H/30 * * * *'
-        }
-        steps {
-            grails 'test-app war', true
         }
     }
 }
