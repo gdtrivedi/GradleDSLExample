@@ -15,6 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @ComponentScan
 public class GradleDSLExampleApp {
 
+    // Main method
     public static void main(String[] args) {
         SpringApplication.run(GradleDSLExampleApp.class, args);
     }
